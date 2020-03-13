@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css reset */
+
+
+
+.wrap{
+    font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    width: 1024px;
+    height: 1500px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #f7f7f7;
+}
+
+.header{
+    height: 400px;
+    background-image: url("../images/the-urban-landscape-1698285.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center 0;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    padding-top: 75px;
+    color:white;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+
+#areaID{
+    /*如果元素非block或是沒有設定寬度，Margin:auto會失效*/
+    display: block; 
+    width: 500px;
+    height: 40px;
+    font-family: inherit;
+
+    /* 清除原本箭頭樣式 */
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none; 
+
+    background-image: url(../images/icons_down.png);
+    background-repeat: no-repeat;
+    background-position: 475px center;
+    background-color: rgb(255, 255, 255, 0.8);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    
+
+    margin: 150px auto 20px auto;
+}
+
+.taggroup{
+    width: 500px;
+    height: 100px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px #e7e7e7;
+    position: absolute;
+    bottom: -70px;
+    left: 262px;
+
+    /*水平置中: (網頁總寬 - 元素寬度)/2*/
+    
+}
+
+.taggroup h2{
+    font-size: 18px;
+    margin: 20px 0 20px 18px;
+}
+
+.tag-container{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tag{
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.tag.purple{
+    background-color: #8a82cc;
+}
+
+.tag.red{
+    background-color: #ffa782;
+}
+
+.tag.yellow{
+    background-color: #f5d005;
+}
+
+.tag.blue{
+    background-color: #559ac8;
+}
+
+.content{
+    position: relative;
+    top: 70px;
+    padding-bottom: 30px;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}
+
+.content h4{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8a82cc;
+}
+
+.listArea{
+    width: 1024px;
+    display: flex;
+    
+    /* 有多行元素時使用 */
+    flex-wrap: wrap;   
+}
+
+
+
+.sight{
+    display: inline-block;
+    width: 470px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    margin: 0 21px 20px 21px;
+    box-shadow: 3px 3px 3px lightgray;
+    
+}
+
+
+.sight .image{
+    
+    height: 170px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.sight h3{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 10px 15px;
+    
+
+}
+
+.info .sight-img{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    
+}
+
+.sight-img.clock{
+    background-image:url(../images/icons_clock.png);
+}
+
+.sight-img.pin{
+    background-image:url(../images/icons_pin.png);
+}
+
+.sight-img.phone{
+    background-image:url(../images/icons_phone.png);
+}
+
+.info .info-text{
+    margin: 5px 0 10px 5px;
+}
+
+.info .priceInfo{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.pagesArea{
+   height: 30px;
+   width: 800px;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto 0 auto;
+   position: absolute;
+   bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.pages{
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.pages.active{
+    color: red;
+}
+
+.pages:hover{
+    cursor: pointer;
+}
+
+.prev, .next{
+    font-size: 14px;
+    height: 30px;
+    width: 50px;
+    line-height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.prev, .next{
+    cursor: pointer;
+}
+
+.footer{
+    height: 150px;
+    background-color:#559ac8 ;
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.footer h5{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
